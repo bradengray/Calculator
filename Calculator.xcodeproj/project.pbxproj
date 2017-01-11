@@ -14,6 +14,8 @@
 		F28602771DC1645600289D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28602751DC1645600289D0F /* LaunchScreen.storyboard */; };
 		F28602821DC1645600289D0F /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28602811DC1645600289D0F /* CalculatorTests.swift */; };
 		F286028D1DC1645600289D0F /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286028C1DC1645600289D0F /* CalculatorUITests.swift */; };
+		F286029B1DC2B1B000289D0F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286029A1DC2B1B000289D0F /* CalculatorBrain.swift */; };
+		F2FA30161DE0FC6F00BEA675 /* AxesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FA30151DE0FC6F00BEA675 /* AxesDrawer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F28602881DC1645600289D0F /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F286028C1DC1645600289D0F /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		F286028E1DC1645600289D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F286029A1DC2B1B000289D0F /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		F2FA30151DE0FC6F00BEA675 /* AxesDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxesDrawer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F22C09B51E24582900366762 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F286026C1DC1645600289D0F /* AppDelegate.swift */,
+				F28602731DC1645600289D0F /* Assets.xcassets */,
+				F28602751DC1645600289D0F /* LaunchScreen.storyboard */,
+				F28602781DC1645600289D0F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		F28602601DC1645500289D0F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +97,7 @@
 				F28602801DC1645600289D0F /* CalculatorTests */,
 				F286028B1DC1645600289D0F /* CalculatorUITests */,
 				F286026A1DC1645500289D0F /* Products */,
+				F22C09B51E24582900366762 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +114,10 @@
 		F286026B1DC1645500289D0F /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				F286026C1DC1645600289D0F /* AppDelegate.swift */,
 				F286026E1DC1645600289D0F /* ViewController.swift */,
+				F286029A1DC2B1B000289D0F /* CalculatorBrain.swift */,
+				F2FA30151DE0FC6F00BEA675 /* AxesDrawer.swift */,
 				F28602701DC1645600289D0F /* Main.storyboard */,
-				F28602731DC1645600289D0F /* Assets.xcassets */,
-				F28602751DC1645600289D0F /* LaunchScreen.storyboard */,
-				F28602781DC1645600289D0F /* Info.plist */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -188,11 +203,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Graycode;
 				TargetAttributes = {
 					F28602681DC1645500289D0F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JYXR948UZ7;
 						ProvisioningStyle = Automatic;
 					};
 					F286027C1DC1645600289D0F = {
@@ -259,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F286029B1DC2B1B000289D0F /* CalculatorBrain.swift in Sources */,
+				F2FA30161DE0FC6F00BEA675 /* AxesDrawer.swift in Sources */,
 				F286026F1DC1645600289D0F /* ViewController.swift in Sources */,
 				F286026D1DC1645600289D0F /* AppDelegate.swift in Sources */,
 			);
@@ -333,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,6 +402,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -412,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JYXR948UZ7;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = graycode.Calculator;
@@ -424,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JYXR948UZ7;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = graycode.Calculator;
@@ -505,6 +527,7 @@
 				F28602931DC1645600289D0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F28602941DC1645600289D0F /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +536,7 @@
 				F28602961DC1645600289D0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F28602971DC1645600289D0F /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +545,7 @@
 				F28602991DC1645600289D0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
